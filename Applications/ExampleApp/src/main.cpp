@@ -13,9 +13,12 @@ found in the LICENSE file.
 #include "MainWindow.h"
 #include <QApplication>
 
+#include <QmitkRegisterClasses.h>
+
 int main(int argc, char* argv[])
 {
   QApplication app(argc, argv);
+  QmitkRegisterClasses();
 
   MainWindow window;
   window.show();
